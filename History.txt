@@ -1,3 +1,10 @@
+== 0.1.1 / 2007-08-06
+
+* Moved to Rubyforge now that the yelp project exists.
+
+* Fixed Yelp::ResponseFormat documentation to note the correct default
+  as Yelp::ResponseFormat::JSON_TO_RUBY.
+
 == 0.1.0 / 2007-08-05
 
 * Initial release.

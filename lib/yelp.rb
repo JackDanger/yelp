@@ -12,5 +12,5 @@ require 'yelp/review/request/geo_point'
 require 'yelp/review/request/location'
 
 class Yelp
-  VERSION = '0.1.0'
+  VERSION = '0.1.1'
 end
