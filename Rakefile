@@ -10,8 +10,7 @@ Hoe.new('yelp', Yelp::VERSION) do |p|
   p.extra_deps = [ 'json', '>= 1.1.1' ]
   p.summary = 'An object-oriented interface to the Yelp Developer API.'
   p.description = 'An object-oriented interface to the Yelp Developer API.'
-  p.url = 'http://www.samskivert.com/shaper/yelp'
+  p.url = 'http://rubyforge.org/projects/yelp'
   p.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
   p.remote_rdoc_dir = '' # Release to root
-  # p.spec_extras = { :rdoc_options => '--main' << 'README' }
 end
