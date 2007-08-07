@@ -1,0 +1,5 @@
+* think about how to gracefully report errors
+
+* should we use "require 'json/add/rails'" for json for rails happiness?
+* use SAX-based XML parsing rather than DOM
+* consider supporting keep-alive for high volume requests
