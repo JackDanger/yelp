@@ -10,8 +10,7 @@ all searches available via the developer API including:
 
 More detailed information on the underlying Yelp API, error response codes, and so forth is available at http://www.yelp.com/developers/getting_started.
 
-The RubyForge project should be at http://rubyforge.org/projects/yelp as soon as they get around to approving my request.  This documentation should then
-be available at http://yelp.rubyforge.org.  In the meantime, you can find the current release at http://www.samskivert.com/shaper/yelp.
+The RubyForge project is hosted at http://rubyforge.org/projects/yelp.  This documentation is available at http://yelp.rubyforge.org.
 
 == About
 
