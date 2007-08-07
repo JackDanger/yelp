@@ -2,8 +2,8 @@
 
 * Moved to Rubyforge now that the yelp project exists.
 
-* Fixed Yelp::ResponseFormat documentation to note the correct default
-  as Yelp::ResponseFormat::JSON_TO_RUBY.
+* Fixed Yelp::Request documentation to note the correct default response
+  format as Yelp::ResponseFormat::JSON_TO_RUBY.
 
 == 0.1.0 / 2007-08-05
 
