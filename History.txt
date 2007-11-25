@@ -1,3 +1,5 @@
+== 0.2.0 / 2007-11-24
+
 * [shaper] fixed validation of neighborhood yelp search url to reflect
   yelp-side url fix removing '/' from immediately following '?'.
 
