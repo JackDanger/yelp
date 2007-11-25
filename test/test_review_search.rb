@@ -52,6 +52,31 @@ class TestReviewSearch < Test::Unit::TestCase
     validate_json_to_ruby_response(response)
   end
 
+  def test_category
+    # perform a basic search of businesses near SOMA
+    request = Yelp::Review::Request::GeoPoint.new(
+                :latitude => 37.78022,
+                :longitude => -122.399797,
+                :radius => 5,
+                :term => 'yelp',
+                :yws_id => @yws_id)
+    response = @client.search(request)
+
+    # perform the same search focusing only on playgrounds
+    narrowed_request = Yelp::Review::Request::GeoPoint.new(
+                         :latitude => 37.78022,
+                         :longitude => -122.399797,
+                         :radius => 5,
+                         :term => 'yelp',
+                         :category => 'playgrounds',
+                         :yws_id => @yws_id)
+    narrowed_response = @client.search(narrowed_request)
+    pp narrowed_response
+
+    # make sure we got less for the second
+    assert(response['businesses'].length > narrowed_response['businesses'].length)
+  end
+
   def test_json_response_format
     request = basic_request(:response_format => Yelp::ResponseFormat::JSON)
     response = @client.search(request)

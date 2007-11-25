@@ -12,13 +12,17 @@ class Yelp
         # requested.
         attr_reader :term
 
+        # optionally narrow the results by a category
+        attr_reader :category
+
         def base_url
           'http://api.yelp.com/business_review_search'
         end
 
         def to_yelp_params
           super.merge(:term => term,
-                      :num_biz_requested => business_count)
+                      :num_biz_requested => business_count,
+                      :category => category)
         end
       end
     end
