@@ -6,7 +6,7 @@ require 'yelp'
 Hoe.new('yelp', Yelp::VERSION) do |p|
   p.rubyforge_name = 'yelp'
   p.author = 'Walter Korman'
-  p.email = 'shaper@wgks.org'
+  p.email = 'shaper@fatgoose.com'
   p.extra_deps << [ 'json', '>= 1.1.1' ]
   p.summary = 'An object-oriented interface to the Yelp Developer API.'
   p.description = 'An object-oriented interface to the Yelp Developer API.'

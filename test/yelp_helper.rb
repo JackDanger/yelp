@@ -1,3 +1,5 @@
+require 'pp'
+
 module YelpHelper
   def validate_json_response (response)
     assert_not_nil response

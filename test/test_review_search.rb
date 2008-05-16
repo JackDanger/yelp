@@ -1,4 +1,3 @@
-require 'pp'
 require 'rubygems'
 require 'test/unit'
 require 'yelp'
@@ -71,7 +70,6 @@ class TestReviewSearch < Test::Unit::TestCase
                          :category => 'playgrounds',
                          :yws_id => @yws_id)
     narrowed_response = @client.search(narrowed_request)
-    pp narrowed_response
 
     # make sure we got less for the second
     assert(response['businesses'].length > narrowed_response['businesses'].length)
