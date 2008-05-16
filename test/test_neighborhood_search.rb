@@ -15,7 +15,7 @@ class TestNeighborhoodSearch < Test::Unit::TestCase
 
   GORDO_LAT = 37.782093
   GORDO_LON = -122.483230
-  GORDO_NEIGHBORHOOD = { "city" => "San Francisco", "name" => "Outer Richmond", "url" => "http://yelp.com/search?find_loc=Outer+Richmond%2C+San+Francisco%2C+CA", "state" => "CA" }
+  GORDO_NEIGHBORHOOD = { "city" => "San Francisco", "name" => "Outer Richmond", "url" => "http://www.yelp.com/search?find_loc=Outer+Richmond%2C+San+Francisco%2C+CA", "state" => "CA" }
 
   def test_geo_point_search
     request = Yelp::Neighborhood::Request::GeoPoint.new(:latitude => GORDO_LAT,

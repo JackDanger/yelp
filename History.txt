@@ -1,3 +1,6 @@
+* [shaper] fixed neighborhood test to suit new www.yelp.com return
+  url.
+
 == 0.2.1 / 2007-11-24
 
 * [shaper] fixed extra dependencies specified in Rakefile to allow for proper
