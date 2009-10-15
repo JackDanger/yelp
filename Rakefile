@@ -3,14 +3,15 @@ require 'hoe'
 $:.unshift(File.dirname(__FILE__) + "/lib")
 require 'yelp'
 
-Hoe.new('yelp', Yelp::VERSION) do |p|
-  p.rubyforge_name = 'yelp'
-  p.author = 'Walter Korman'
-  p.email = 'shaper@fatgoose.com'
-  p.extra_deps << [ 'json', '>= 1.1.1' ]
-  p.summary = 'An object-oriented interface to the Yelp Developer API.'
-  p.description = 'An object-oriented interface to the Yelp Developer API.'
-  p.url = 'http://rubyforge.org/projects/yelp'
-  p.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
-  p.remote_rdoc_dir = '' # Release to root
+Hoe.spec('yelp') do |p|
+  self.version = Yelp::VERSION
+  self.rubyforge_name = 'yelp'
+  self.author = 'Walter Korman'
+  self.email = 'shaper@fatgoose.com'
+  self.extra_deps << [ 'json', '>= 1.1.1' ]
+  self.summary = 'An object-oriented interface to the Yelp Developer API.'
+  self.description = 'An object-oriented interface to the Yelp Developer API.'
+  self.url = 'http://rubyforge.org/projects/yelp'
+  self.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
+  self.remote_rdoc_dir = '' # Release to root
 end
